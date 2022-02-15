@@ -1,0 +1,16 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 5px;
+
+}
+.container{
+    display: flex;
+    position: relative;
+}
+.box-2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
