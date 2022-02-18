@@ -1,0 +1,37 @@
+.photo_frame{
+    width: 300px;
+    height: 200px;
+    border: 10px solid rosybrown;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+}
+.photo_frame .photo img{
+width: 100%;
+}
+.photo_details{
+    position: absolute;
+    width: 300px;
+    display: none;
+    height: 200px;
+    top: 0;
+}
+.photo_frame:hover .photo_details{
+    display: block;
+   background-color: rgb(114, 97, 97, 0.5);
+
+}
+.photo_frame .photo_details h2{
+    background-color:rgb(14, 10, 10, 0.5);
+    color: white;
+    text-align: center;
+}
+.photo_frame .photo_details p{
+    color: white;
+    text-align: center;
+}
+
+.photo_albam{
+    display: flex;
+    flex-wrap: wrap;
+}
