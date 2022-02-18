@@ -15,17 +15,29 @@ main{
     height: 100px;
     margin-right: 10px;
 }
-.top_players{
+.top_players, .blogs{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     margin-top: 20px;
+    place-items: center;
 }
-.player{
+
+.top_players{
+    grid-template-columns: repeat(4, 1fr);
+}
+.blogs{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player, .blog{
     display: flex;
     align-items: center;
 }
 
+.thambnail img{
+    width: 200px;
+    margin-right: 20px;
+}
 @media (max-width:992px){
     .top_players{
         display: grid;
@@ -33,6 +45,10 @@ main{
         grid-gap: 30px;
         margin-top: 20px;
 }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (max-width:767px){
@@ -42,6 +58,9 @@ main{
         grid-gap: 30px;
         margin-top: 20px;
 }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width:567px){
@@ -51,4 +70,11 @@ main{
         grid-gap: 30px;
         margin-top: 20px;
 }
+.blog{
+    display: block;
+}
+}
+
+.Top_Blog{
+    margin-top: 20px;
 }
